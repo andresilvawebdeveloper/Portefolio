@@ -220,6 +220,7 @@ img {
     margin-top: -10px; /* ajusta a posição da foto para subir */
 }
 
+
 .home__blob {
   fill: var(--first-color);
 }
@@ -328,6 +329,45 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+/* ===== WORK - COMING SOON ===== */
+.work__coming {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+
+.work__placeholder {
+  text-align: center;
+  color: var(--second-color);
+}
+
+.work__placeholder i {
+  font-size: 4rem;
+  color: var(--first-color);
+  display: inline-block;
+  animation: hourglass-rotate 2s ease-in-out infinite;
+}
+
+.work__placeholder p {
+  margin-top: 1rem;
+  font-weight: var(--font-semi);
+  font-size: 1.1rem;
+}
+
+/* Animação da ampulheta */
+@keyframes hourglass-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -423,6 +463,43 @@ img {
     justify-items: center;
   }
 }
+@media screen and (max-width: 767px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home__data {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__img {
+    order: 2;
+    position: static;
+    width: 220px;
+    margin: 1rem 0;
+  }
+
+  .home__data .button {
+    order: 3;
+    margin-top: 1.5rem;
+  }
+
+  .home__social {
+    order: 4;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+}
+
+
+
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
