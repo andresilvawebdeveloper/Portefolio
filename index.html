@@ -98,27 +98,49 @@
     </section>
 
     <!--===== WORK =====-->
-    <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
-        <div class="work__container bd-grid">
-            <a href="#" class="work__img"><img src="assets/img/work1.jpg" alt=""></a>
-            <a href="#" class="work__img"><img src="assets/img/work2.jpg" alt=""></a>
-            <a href="#" class="work__img"><img src="assets/img/work3.jpg" alt=""></a>
-        </div>
-    </section>
+<section class="work section" id="work">
+  <h2 class="section-title">Work</h2>
+
+  <div class="work__container bd-grid work__coming">
+    <div class="work__placeholder">
+      <i class='bx bx-hourglass'></i>
+      <p>Projetos disponíveis brevemente</p>
+    </div>
+  </div>
+</section>
+
 
     <!--===== CONTACT =====-->
-    <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact__container bd-grid">
-            <form action="#" class="contact__form">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="email" placeholder="Email" class="contact__input">
-                <textarea cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
-                <input type="button" value="Enviar" class="contact__button button">
-            </form>
-        </div>
-    </section>
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact__container bd-grid">
+    <form action="https://formspree.io/f/mlgdykzd" method="POST" class="contact__form">
+
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="O teu email"
+        class="contact__input"
+        required
+      >
+
+      <textarea 
+        name="message" 
+        placeholder="A tua mensagem"
+        class="contact__input"
+        rows="6"
+        required
+      ></textarea>
+
+      <button type="submit" class="button contact__button">
+        Enviar mensagem
+      </button>
+
+    </form>
+  </div>
+</section>
+
 </main>
 
 <footer class="footer">
