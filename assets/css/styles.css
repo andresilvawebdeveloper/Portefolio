@@ -161,6 +161,19 @@ img {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.nav__darkmode {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--second-color);
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav__darkmode:hover {
+  color: var(--first-color);
+}
+
 
 /*Active menu*/
 .active-link::after {
@@ -567,4 +580,41 @@ img {
   .home__img {
     width: 450px;
   }
+}
+/* ===== DARK MODE ===== */
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-theme .l-header {
+  background-color: #2a2a2a;
+  box-shadow: none;
+}
+
+body.dark-theme .nav__logo,
+body.dark-theme .nav__link,
+body.dark-theme .section-title,
+body.dark-theme p {
+  color: #f1f1f1;
+}
+
+body.dark-theme .nav__link:hover::after,
+body.dark-theme .active-link::after {
+  background-color: #f1f1f1;
+}
+
+body.dark-theme .button {
+  background-color: #f1f1f1;
+  color: #1e1e1e;
+}
+
+body.dark-theme .skills__data,
+body.dark-theme .work__img {
+  background-color: #2a2a2a;
+  box-shadow: none;
+}
+
+body.dark-theme .footer {
+  background-color: #111;
 }
