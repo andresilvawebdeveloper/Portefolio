@@ -618,3 +618,72 @@ body.dark-theme .work__img {
 body.dark-theme .footer {
   background-color: #111;
 }
+/* ===== FOOTER LEGAL LINKS ===== */
+.footer__legal {
+    padding: 0 1rem;
+}
+
+.footer__legal a {
+    transition: 0.3s;
+    font-family: var(--body-font);
+}
+
+.footer__legal a:hover {
+    opacity: 1 !important;
+    color: var(--first-color) !important;
+}
+
+/* ===== PAGINAS LEGAIS (Termos e Privacidade) ===== */
+/* Estilos aplicados ao container principal destas páginas */
+.l-main.bd-grid {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.l-main.bd-grid h1.section-title {
+    margin-bottom: var(--mb-6);
+    color: var(--first-color);
+}
+
+.l-main.bd-grid h2 {
+    color: var(--first-color);
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: var(--font-semi);
+}
+
+.l-main.bd-grid p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    color: var(--second-color);
+    text-align: left; /* Justify costuma criar espaços estranhos em mobile */
+}
+
+/* Garante que o texto fica claro no Dark Mode */
+body.dark-theme .l-main.bd-grid p,
+body.dark-theme .l-main.bd-grid h2 {
+    color: #f1f1f1;
+}
+
+/* Ajuste do Botão Voltar */
+.nav__menu .button {
+    padding: 0.6rem 1.5rem !important;
+    font-size: var(--smaller-font-size);
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividade para os links do footer */
+@media screen and (max-width: 480px) {
+    .footer div[style*="display: flex"] {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: center !important;
+    }
+}
