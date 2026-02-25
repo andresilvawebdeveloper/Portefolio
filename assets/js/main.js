@@ -55,28 +55,31 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 /* ===== DARK MODE ===== */
-const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'bx-sun';
 
 const selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
 
-if (selectedTheme) {
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-  themeButton.firstElementChild.classList[selectedIcon === 'bx-sun' ? 'add' : 'remove'](iconTheme);
+const lampCord = document.getElementById('lamp-cord');
+
+if(lampCord) {
+    console.log("Sistema de candeeiro detetado e ativo."); // Verificação na consola
+
+    lampCord.addEventListener('click', () => {
+        console.log("Fio puxado!"); // Se isto não aparecer na consola, o clique não está a chegar ao elemento
+        
+        // 1. Aplica o movimento de descida
+        lampCord.classList.add('pulling');
+
+        // 2. Troca o tema global
+        document.body.classList.toggle('dark-theme');
+
+        // 3. Remove a classe para o fio subir (efeito elástico)
+        setTimeout(() => {
+            lampCord.classList.remove('pulling');
+        }, 150);
+    });
+} else {
+    console.error("Erro: O elemento 'lamp-cord' não foi encontrado no HTML.");
 }
-
-themeButton.addEventListener('click', () => {
-  document.body.classList.toggle(darkTheme);
-  themeButton.firstElementChild.classList.toggle(iconTheme);
-
-  localStorage.setItem(
-    'selected-theme',
-    document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-  );
-  localStorage.setItem(
-    'selected-icon',
-    themeButton.firstElementChild.classList.contains(iconTheme) ? 'bx-sun' : 'bx-moon'
-  );
-});

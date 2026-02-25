@@ -1,307 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="google-site-verification" content="fHBgBwuqJdLpr14rqPqykXDTHiO1wyjhAuW8MySkfxE" />
-
-    <meta name="description" content="André Silva - Web Developer Freelancer focado em criar websites profissionais, modernos e responsivos para pequenas e médias empresas.">
-
+    <meta name="description" content="André Silva - Web Developer Freelancer focado em criar ecossistemas digitais com alma.">
+    
     <link rel="stylesheet" href="assets/css/styles.css">
-
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
+    
     <title>André Silva | Web Developer</title>
 </head>
-<body>
-<!--===== HEADER =====-->
-<header class="l-header">
-   <nav class="nav bd-grid">
-  <div>
-    <a href="#" class="nav__logo">André Silva</a>
-  </div>
+<body class="dark-theme">
 
- <div class="nav__menu" id="nav-menu">
-  <ul class="nav__list">
-    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-    <li class="nav__item">
-      <a href="https://clienthub.andresilvawebdev.pt" class="nav__link" target="_blank" style="color: var(--first-color); font-weight: 700;">
-        Client Hub <i class='bx bx-external-link'></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-  <!-- BOTÃO DARK MODE -->
-  <div class="nav__darkmode" id="theme-button">
-    <i class='bx bx-moon'></i>
-  </div>
-
-  <!-- MENU MOBILE -->
-  <div class="nav__toggle" id="nav-toggle">
-    <i class='bx bx-menu'></i>
-  </div>
-</nav>
-
-</header>
-
-<main class="l-main">
-    <!--===== HOME =====-->
-    <section class="home bd-grid" id="home">
-        <div class="home__data">
-            <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">André Silva</span><br>Web Developer</h1>
-            <a href="#contact" class="button">Contact</a>
+    <div class="power-station">
+        <div class="lamp-switch" id="theme-button" title="System Override">
+            <div class="lamp-glow"></div>
+            <i class='bx bx-power-off power-icon'></i>
         </div>
-        <div class="home__img">
-            <img src="assets/img/fotoPessoal.jpg" alt="André Silva">
-        </div>
-    </section>
-
-    <!--===== ABOUT =====-->
-    <section class="about section" id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about__container bd-grid">
-            <div class="about__img">
-                <img src="assets/img/webgit.gif" alt="André Silva">
-            </div>
-            <div>
-                <h2 class="about__subtitle">I'm André Silva</h2>
-                <p class="about__text">Sou web developer freelancer focado em criar websites profissionais para pequenas e médias empresas, com design moderno, responsivo e fácil de manter.</p>
-            </div>
-        </div>
-    </section>
-
-    <!--===== SKILLS =====-->
-    <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills__container bd-grid">
-            <div>
-                <h2 class="skills__subtitle">Professional Skills</h2>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-html5 skills__icon'></i>
-                        <span class="skills__name">HTML5</span>
-                    </div>
-                    <div class="skills__bar skills__html"></div>
-                    <div><span class="skills__percentage">95%</span></div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-css3 skills__icon'></i>
-                        <span class="skills__name">CSS3</span>
-                    </div>
-                    <div class="skills__bar skills__css"></div>
-                    <div><span class="skills__percentage">85%</span></div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-javascript skills__icon' ></i>
-                        <span class="skills__name">JavaScript</span>
-                    </div>
-                    <div class="skills__bar skills__js"></div>
-                    <div><span class="skills__percentage">65%</span></div>
-                </div>
-                <div class="skills__data">
-            <div class="skills__names">
-                <i class='bx bxl-react skills__icon'></i>
-                <span class="skills__name">React</span>
-            </div>
-            <div class="skills__bar skills__react"></div>
-            <div><span class="skills__percentage">75%</span></div>
-        </div>
-
-
-        <div class="skills__data">
-            <div class="skills__names">
-                <i class='bx bxl-android skills__icon'></i>
-                <span class="skills__name">Kotlin</span>
-            </div>
-            <div class="skills__bar skills__kotlin"></div>
-            <div><span class="skills__percentage">50%</span></div>
-        </div>
-        <div class="skills__data">
-            <div class="skills__names">
-                <i class='bx bx-code-alt skills__icon''></i>
-                <span class="skills__name">Java</span>
-            </div>
-            <div class="skills__bar skills__java"></div>
-            <div><span class="skills__percentage">75%</span></div>
-        </div>
-
-        <div class="skills__data">
-            <div class="skills__names">
-                <i class='bx bx-code-alt skills__icon'></i>
-                <span class="skills__name">C</span>
-            </div>
-            <div class="skills__bar skills__c"></div>
-            <div><span class="skills__percentage">65%</span></div>
-        </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!--===== WORK =====-->
-<section class="work section" id="work">
-  <h2 class="section-title">Work</h2>
-
-  <div class="work__container bd-grid">
-    
-    <article class="work__card">
-      <div class="work__img">
-        <img src="assets/img/FocusFlow.png" alt="Screenshot do FocusFlow">
-      </div>
-      <div class="work__data">
-        <h3 class="work__title">FocusFlow</h3>
-        <a href="https://andresilvawebdeveloper.github.io/FocusFlow/" target="_blank" class="work__link">
-          Ver Projeto <i class='bx bx-link-external'></i>
-        </a>
-      </div>
-    </article>
-
-    <article class="work__card">
-      <div class="work__img">
-        <img src="assets/img/GameHub.png" alt="Screenshot do Game Hub">
-      </div>
-      <div class="work__data">
-        <h3 class="work__title">Game Hub</h3>
-        <a href="https://andresilvawebdeveloper.github.io/GameHub/" target="_blank" class="work__link">
-          Ver Projeto <i class='bx bx-link-external'></i>
-        </a>
-      </div>
-    </article>
-
-    <article class="work__card">
-      <div class="work__img">
-        <img src="assets/img/Loja Online.png" alt="Screenshot da Loja Online">
-      </div>
-      <div class="work__data">
-        <h3 class="work__title">Loja Online Simples</h3>
-        <a href="https://andresilvawebdeveloper.github.io/Online-Shop-Example/" target="_blank" class="work__link">
-          Ver Projeto <i class='bx bx-link-external'></i>
-        </a>
-      </div>
-    </article>
-
-    <article class="work__card">
-      <div class="work__img">
-        <img src="assets/img/TravelLog.png" alt="Screenshot do TravelLog">
-      </div>
-      <div class="work__data">
-        <h3 class="work__title">TravelLog</h3>
-        <a href="https://andresilvawebdeveloper.github.io/TravelLog/" target="_blank" class="work__link">
-          Ver Projeto <i class='bx bx-link-external'></i>
-        </a>
-      </div>
-    </article>
-
-    <article class="work__card">
-      <div class="work__img">
-        <img src="assets/img/Landing Page.png" alt="Screenshot da Landing Page Empresarial">
-      </div>
-      <div class="work__data">
-        <h3 class="work__title">Landing Page Empresarial</h3>
-        <a href="https://andresilvawebdeveloper.github.io/AAF-Website/" target="_blank" class="work__link">
-          Ver Projeto <i class='bx bx-link-external'></i>
-        </a>
-      </div>
-    </article>
-
-    <article class="work__card">
-      <div class="work__img">
-        <img src="assets/img/BookStore.png" alt="Screenshot da Book Store">
-      </div>
-      <div class="work__data">
-        <h3 class="work__title">Book Store</h3>
-        <a href="https://andresilvawebdeveloper.github.io/Book-Store/" target="_blank" class="work__link">
-          Ver Projeto <i class='bx bx-link-external'></i>
-        </a>
-      </div>
-    </article>
-
-    <article class="work__card">
-      <div class="work__img">
-        <img src="assets/img/ShowCase.png" alt="Screenshot do Showcase Interativo">
-      </div>
-      <div class="work__data">
-        <h3 class="work__title">Showcase Interativo</h3>
-        <a href="https://andresilvawebdeveloper.github.io/Showcase-Interativo/" target="_blank" class="work__link">
-          Ver Projeto <i class='bx bx-link-external'></i>
-        </a>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-
-    <!--===== CONTACT =====-->
-<section class="contact section" id="contact">
-  <h2 class="section-title">Contact</h2>
-
-  <div class="contact__container bd-grid">
-    <form action="https://formspree.io/f/mlgdykzd" method="POST" class="contact__form">
-
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="O teu email"
-        class="contact__input"
-        required
-      >
-
-      <textarea 
-        name="message" 
-        placeholder="A tua mensagem"
-        class="contact__input"
-        rows="6"
-        required
-      ></textarea>
-
-      <button type="submit" class="button contact__button">
-        Enviar mensagem
-      </button>
-
-    </form>
-  </div>
-</section>
-
-</main>
-
-<footer class="footer" style="background-color: var(--second-color) !important; color: #fff !important; text-align: center !important; padding: 3rem 1rem !important; font-family: var(--body-font) !important; display: block !important;">
-    <p class="footer__title" style="font-size: 2rem !important; margin-bottom: 1rem !important; font-weight: 700 !important; color: #fff !important;">André Silva</p>
-
-    <div class="footer__social" style="margin-bottom: 1.5rem !important; display: flex !important; justify-content: center !important;">
-        <a href="#" class="footer__icon" style="font-size: 1.5rem !important; color: #fff !important; margin: 0 1rem !important;"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/andresilvawebdeveloper" class="footer__icon" style="font-size: 1.5rem !important; color: #fff !important; margin: 0 1rem !important;"><i class='bx bxl-github'></i></a>
-        <a href="https://www.instagram.com/andresilva_webdeveloper/" class="footer__icon" style="font-size: 1.5rem !important; color: #fff !important; margin: 0 1rem !important;"><i class='bx bxl-instagram'></i></a>
     </div>
 
-    <p style="margin-bottom: 2rem !important;">
-        <a href="https://forms.gle/V35bXgwKkKzJPdsV7" target="_blank" rel="noopener noreferrer" style="color: var(--first-color) !important; font-weight: 600 !important; text-decoration: none !important; font-size: 0.9rem !important;">
-            PEDIDO DE DESENVOLVIMENTO DE WEBSITE
-        </a>
-    </p>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">André<span class="logo-dot"> </span>Silva</a>
+            </div>
 
-   <div style="margin-bottom: 2rem !important; display: flex !important; justify-content: center !important; gap: 20px !important; flex-wrap: wrap !important; align-items: center !important;">
-    <a href="assets/terms-and-privacy/termos.html" style="color: rgba(255,255,255,0.6) !important; text-decoration: none !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;">Termos de Serviço</a>
-    <a href="assets/terms-and-privacy/privacidade.html" style="color: rgba(255,255,255,0.6) !important; text-decoration: none !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;">Política de Privacidade</a>
-    <a href="https://www.livroreclamacoes.pt" style="color: rgba(255,255,255,0.6) !important; text-decoration: none !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;">Livro de Reclamações</a>
-   
-       
-    </a>
-</div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <a href="https://clienthub.andresilvawebdev.pt" class="nav__link hub-link" target="_blank">
+                            Hub <i class='bx bx-terminal'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-    <p class="footer__copy" style="font-size: 0.75rem !important; opacity: 0.5 !important; color: #fff !important;">&#169; 2026 André Silva. Todos os direitos reservados.</p>
-</footer>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+        </nav>
+    </header>
 
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title"><br><span class="home__title-color">Web Developer</span></h1>
+                <p class="home__subtitle">Lógica de baixo nível. Estética de alto impacto.</p>
+                <div class="home__btns">
+                    <a href="#contact" class="button">Inicie o Projeto</a>
+                </div>
+            </div>
+            <div class="home__img">
+                <div class="img-glow"></div>
+                <img src="assets/img/fotoPessoal.png" alt="André Silva">
+            </div>
+        </section>
 
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="assets/js/main.js"></script>
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/webgit.gif" alt="André Silva">
+                </div>
+                <div class="about__content">
+                    <p class="about__text">Freelancer focado em criar websites que não são apenas páginas, mas ecossistemas. Com domínio em C, Java, Python e React, garanto que o seu site tenha a robustez de um software e a leveza de uma interface moderna.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Programing Skills</h2>
+            <div class="skills__container bd-grid">
+                <div class="skills__data"><div class="skills__names"><i class='bx bxl-html5 skills__icon'></i><span>HTML5</span></div><div class="skills__bar skills__html"></div><span class="skills__percentage">95%</span></div>
+                <div class="skills__data"><div class="skills__names"><i class='bx bxl-css3 skills__icon'></i><span>CSS3</span></div><div class="skills__bar skills__css"></div><span class="skills__percentage">85%</span></div>
+                <div class="skills__data"><div class="skills__names"><i class='bx bxl-javascript skills__icon'></i><span>JS</span></div><div class="skills__bar skills__js"></div><span class="skills__percentage">65%</span></div>
+                <div class="skills__data"><div class="skills__names"><i class='bx bxl-react skills__icon'></i><span>React</span></div><div class="skills__bar skills__react"></div><span class="skills__percentage">75%</span></div>
+                <div class="skills__data"><div class="skills__names"><i class='bx bx-code-alt skills__icon'></i><span>Java</span></div><div class="skills__bar skills__java"></div><span class="skills__percentage">75%</span></div>
+                <div class="skills__data"><div class="skills__names"><i class='bx bxl-android skills__icon'></i><span>Kotlin</span></div><div class="skills__bar skills__kotlin"></div><span class="skills__percentage">50%</span></div>
+                <div class="skills__data"><div class="skills__names"><i class='bx bx-code-alt skills__icon'></i><span>C</span></div><div class="skills__bar skills__c"></div><span class="skills__percentage">65%</span></div>
+                <div class="skills__data"><div class="skills__names"><i class='bx bx-code-alt skills__icon'></i><span>Python</span></div><div class="skills__bar skills__js"></div><span class="skills__percentage">80%</span></div>
+            </div>
+        </section>
+
+        <section class="work section" id="work">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="work__container bd-grid">
+                <article class="work__card card-large">
+                    <div class="work__img"><img src="assets/img/FocusFlow.png" alt="FocusFlow"></div>
+                    <div class="work__data"><h3>FocusFlow</h3><a href=" https://andresilvawebdeveloper.github.io/FocusFlow/" class="work__link">Clica Aqui</a></div>
+                </article>
+                <article class="work__card">
+                    <div class="work__img"><img src="assets/img/GameHub.png" alt="Game Hub"></div>
+                    <div class="work__data"><h3>Game Hub</h3><a href=" https://andresilvawebdeveloper.github.io/GameHub/" class="work__link">Clica Aqui</a></div>
+                </article>
+                <article class="work__card">
+                    <div class="work__img"><img src="assets/img/TravelLog.png" alt="TravelLog"></div>
+                    <div class="work__data"><h3>TravelLog</h3><a href="https://andresilvawebdeveloper.github.io/TravelLog/" class="work__link">Clica Aqui</a></div>
+                </article>
+                <article class="work__card">
+                    <div class="work__img"><img src="assets/img/Loja Online.png" alt="Online Store"></div>
+                    <div class="work__data"><h3>Online Store</h3><a href="https://andresilvawebdeveloper.github.io/Online-Shop-Example/" class="work__link">Clica Aqui</a></div>
+                </article>
+                <article class="work__card">
+                    <div class="work__img"><img src="assets/img/Landing Page.png" alt="Landing Page"></div>
+                    <div class="work__data"><h3>Landing Page</h3><a href="https://andresilvawebdeveloper.github.io/AAF-Website/" class="work__link">Clica Aqui</a></div>
+                </article>
+                <article class="work__card">
+                    <div class="work__img"><img src="assets/img/ShowCase.png" alt="Show Case"></div>
+                    <div class="work__data"><h3>Show Case</h3><a href="https://andresilvawebdeveloper.github.io/Showcase-Interativo/" class="work__link">Clica Aqui</a></div>
+                </article>
+            </div>
+        </section>
+        <section class="interactive section" id="interactive">
+    <h2 class="section-title">Interactive Lab</h2>
+    <div class="interactive__container bd-grid">
+        
+        <div class="lamp-box">
+            <div class="lamp-cord" id="lamp-cord">
+                <div class="cord-thread"></div>
+                <div class="cord-handle"></div>
+            </div>
+            <div class="lamp-base-visual">
+                <i class='bx bxs-bulb lamp-icon'></i>
+                <p class="lamp-text">Puxe o fio para alternar o sistema</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Establish Connection</h2>
+            <div class="contact__container bd-grid">
+                <form action="https://formspree.io/f/mlgdykzd" method="POST" class="contact__form">
+                    <input type="email" name="email" placeholder="Seu Canal de Comunicação (Email)" class="contact__input" required>
+                    <textarea name="message" placeholder="Descreva a sua visão..." class="contact__input" rows="6" required></textarea>
+                    <button type="submit" class="button contact__button">Transmitir Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">André Silva</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <div class="footer__legal">
+            <a href="/assets/terms-and-privacy/termos.html">Termos</a> • <a href="/assets/terms-and-privacy/privacidade.html">Privacidade</a> • <a href="https://www.livroreclamacoes.pt/inicio/">Livro de Reclamações</a> 
+        </div>
+        <p class="footer__copy">&#169; 2026 André Silva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const themeButton = document.getElementById('theme-button')
+        themeButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            themeButton.style.transform = 'scale(0.8)';
+            setTimeout(() => themeButton.style.transform = 'scale(1)', 100);
+        })
+    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
